@@ -1,5 +1,8 @@
 @import "bootstrap";
 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
+
+
 .clear {
 	clear: both;
 }
@@ -50,4 +53,13 @@ header {
 
 hr {
   clear: both;
+}
+
+h1 {
+  font-family: 'Noto Sans HK', sans-serif;
+
+}
+
+h2 {
+  font-family: 'Noto Sans HK', sans-serif;
 }
