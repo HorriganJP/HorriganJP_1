@@ -1,12 +1,13 @@
 require_relative 'boot'
-require File.expand_path('../boot', )
+
+require File.expand_path('../boot', __FILE__)
+
 require 'rails/all'
-
-
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
+Bundler.require(:default, Rails.env)
+
 
 module Splurty
   class Application < Rails::Application
@@ -18,11 +19,12 @@ module Splurty
     # -- all .rb files in that directory are automatically loaded after loading
 
     # Add the fonts path
-    config.assets.path << "#{Rails.root}/app/assets/fonts"
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
 
 
-  # Precompile additional assets
+ 	# Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
+    
     # the framework and any gems in your application.
   end
 end

@@ -1,6 +1,5 @@
 @import "bootstrap";
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
 
 
 .clear {
@@ -34,7 +33,7 @@
 .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
-  padding-top: 26px;  
+  padding-top: 26px;
 }
 
 .links {
@@ -45,6 +44,8 @@
   color: black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
+  font-family: 'source_sans_problack', sans-serif;
+  font-weight: bold; 
 }
 
 header {
@@ -56,10 +57,10 @@ hr {
 }
 
 h1 {
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'source_sans_problack', sans-serif;
 
 }
 
 h2 {
-  font-family: 'Noto Sans HK', sans-serif;
+  font-family: 'source_sans_problack_italic', sans-serif;
 }
