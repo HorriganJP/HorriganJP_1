@@ -1,15 +1,17 @@
 <!--index.html.erb-->
-<h2>
-	 <span> 
-      SPLURTY / No. <%= @quote.id %>
-   </span>
-   
-</h2>
-<h1><%= @quote.saying %></h1>
+<% if @quote.present? %> 
+  <h2>
+  	  <span>
+        SPLURTY / No. <%= @quote.id %>
+     </span>
+     
+  </h2>
+  <h1><%= @quote.saying %></h1>
 
-<h2><%= @quote.author %></h2>
+  <h2><%= @quote.author %></h2>
 
-<br class="clear" />
-<br />
-<br />
-<br />
+  <br class="clear" />
+  <br />
+  <br />
+  <br />
+<% end %>
